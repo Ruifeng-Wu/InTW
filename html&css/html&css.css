@@ -1,0 +1,299 @@
+  *{
+  	margin: 0;
+  	padding: 0;
+  }
+  body{
+  	width: 1600px;
+  	background-color: #80a8cc; 	
+  	margin:0 auto;
+  }
+  h1{
+  	font-size: 52px;
+  	font-family: "Amatica SC",Cursive;
+  }
+  button{
+  	display: block;
+  	border-radius: 3px;
+  	border-width: 0;
+  	width: 300px;
+  	height: 60px;
+  	font-size: 24px;
+  }
+  p{
+  	font-size: 20px;
+  	color: #636471;
+  	font-family: "Open Sans";
+
+  } 
+  .logo>img{ 	
+  	height: 100%;
+  }
+  a{
+  	line-height: 100px;
+  	width: 100px;
+  	height: 100px;
+  	color: #d8d6d5; 	
+  	text-decoration:none;
+  }
+
+  .logo{
+  	width: 25%;
+  	height: 100px; 	
+  	display: inline-block;
+  	float: left;
+  }
+  .header{
+  	width: 100%;
+  	height: 100px;
+  	background-color: white;
+  	padding: 0;
+  }
+  .navbar{
+  	overflow: auto;
+  	padding: 0 21px;
+  	float: left;
+  	list-style: none;
+  	margin: 0 42px;
+  	border-width: 0 1px;
+  	border-style: solid;
+  	border-color: #eae7e2;
+  	height: 100%;
+  }
+  .navbar>li{
+  	text-align: center;
+  	border-width: 0;
+  	margin: 0 21px;
+  	height: 100%;
+  	display: inline-block;
+  }
+  .donate-btn{
+  	float: left;
+  	height: 100%;
+  }
+  .donate-btn>button{ 
+  	margin-top: 30px;
+  	width: 150px;
+  	height: 40px;
+  	font-weight: bolder;
+  	color: #4d4e59;
+  	background-color: white;
+  	border: 1px solid #dad7d2;
+  }
+  .home{
+  	position: relative;
+  	margin: 0 auto;
+  	padding: 0;
+  	background-color: #white;
+  	background:url("https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/c78e0899c3b87b265ed232d61664cb26905302000306b6c857ad92493d384b3bd2b9a7b42867bb6a1c3e4f6f751a9c2b?pictype=scale&from=30113&version=3.3.3.3&uin=296078293&fname=IMG_2296.JPG&size=750");
+  	background-repeat:no-repeat;
+  	background-size:100% 100%;
+  	-moz-background-size:100% 100%;
+  	height: 794px;
+  }
+  .home-mask{
+  	height:100%;
+  	width:100%;
+  	background: rgba(255,255,255,0.1);
+  }
+  .banner{
+  	margin: 0;
+  	padding: 300px 0 50px 0;
+  	color: #ffffff; 	
+  	text-align: center;
+  	font-size: 60px;
+  }
+  .home-btn{
+  	width: 606px;
+  	height: 60px;
+  	margin: auto;
+  }
+  .home-btn>button{
+  	display: inline-block;
+  	text-align: center;
+  	margin: 0 15px;
+  	padding: 0;
+  	width: 270px;
+  	height: 60px;
+  	background-color: #FFF; 		
+  	font-size: 24px;
+  	color: white;
+  	border: solid 1px white;
+  	border-radius: 3px;
+  	background-color:transparent;
+  	opacity:0.6;
+  	filter:alpha(opacity=60);
+  }
+  .down{
+  	position: absolute;
+  	left: 49%;
+  	bottom: 24px;
+  	border-right: 3px solid #dad7d2;
+  	border-top: 3px solid #dad7d2;
+  	height: 30px;
+  	width: 30px;
+  	margin:50px auto 0;
+  	transform: rotate(deg);
+  	-webkit-transform: rotate(135deg);
+  	/*不加这两个属性三角会比上一个略丑, 大家可以试一下*/
+  	border-left: 2px solid transparent;
+  	border-bottom: 2px solid transparent;
+  }
+
+
+  .mission{
+  	overflow:auto;
+  	background-color: white;
+  }
+  .mission>h1{
+  	margin: 0; 
+  	color: #4d4e59;
+  	text-align: center;
+  	padding: 150px 0 0 0;
+  }
+  .mission>p{
+  	text-align: center;
+  	padding: 32px 440px;
+  }
+  .mission>button{
+  	margin: 0 auto 200px;
+  	background-color: #ffcd62;
+  	color: #636471; 	 
+  }
+  .section{
+  	position: relative;
+  	height: 700px;
+  }
+  .section>.container>p{
+  	margin-bottom: 32px;
+  	width: 450px;
+  	color: white;
+  }
+  .container>h1{
+  	color: #fcf9f4;
+  	margin-bottom: 32px;
+  } 
+  .container>button{
+  	color:white;
+  } 
+  .image-container{
+  	position: absolute; 	
+  	width:330px; 
+  	height:330px;
+  	border-radius:50%; 
+  	overflow:hidden;
+  	text-align: center;
+  }
+  .students{
+  	background-color: #92D1B1; 	
+  }
+  .students>.container{
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	margin: 170px 300px auto 138px;
+  }
+  .students>.image-container{
+  	left: 0;
+  	margin: 185px 0 185px 312px;
+  }
+  .students>.container>button{
+  	background-color: #7DB79A;
+  }
+  .carousel-example{
+  	position: absolute;
+  	top: 40%;
+  	right: 200px;
+  	display: inline-block;
+  }
+  .carousel-example>ul>li{
+  	list-style: none;
+  	width: 15px;
+  	height: 15px;
+  	margin-bottom: 10px;
+  	border-radius: 15px;
+  	border: 1px solid #fff;
+  }
+  .active{
+  	background-color: white;
+  }
+  .tutors{
+  	background-color: #ffcd62;
+  }
+  .tutors>.container{
+  	margin-left: 312px;
+  	padding-top: 185px;
+  	left:300px;
+  }
+  .tutors> .image-container{
+  	top:185px;
+  	right: 300px;
+  }
+  .tutors>.container>button{
+  	background-color: #eabc5b;
+  }
+  .partners{
+  	background-color: #80a8cc;
+  }
+  .partners>.container{
+  	position: absolute;
+  	top: 0px;
+  	right: 0px;
+  	margin: 170px 300px auto 138px;
+  }
+  .partners>.image-container{
+  	left: 0;
+  	margin: 185px 0 185px 312px;
+  }
+  .partners>.container>button{
+  	background-color: #6d91b1;
+  }
+  .progress{
+  	height: 840px;
+  	background-color: white;
+  }
+  .progress>h1{
+  	padding: 170px 0 80px 0;
+  	color: #909094;
+  	text-align: center;
+  }
+  .progress>.container{
+  	margin: 0 218px;
+  }
+  .progress-box{
+  	text-align: center;
+  	height: 350px;
+  	width: 350px;
+  	display: inline-block;
+  	border: solid 1px #eeece7;
+  }
+  .progress-box>h1{
+  	padding-top:80px;
+  	font-size: 72px;
+  }
+  .progress-box>p{
+  	padding-top:60px;
+  	font-size: 16px;
+  } 
+  .box-1>h1,.box-1>p{
+  	color:#91d0b1;
+  }
+  .box-2>h1,.box-2>p{
+  	color: #ffcd62;
+  }
+  .box-3>h1,.box-3>p{
+  	color: #80a8cc;
+  }
+  .box-2{
+  	margin:0 30px;
+  }
+  .footer{
+  	height: 100px;
+  	width: 1600px;
+  	background-color: #4d4e59;
+  	display:table-cell;
+  	vertical-align:middle;
+  }
+  .footer>p{
+  	color: #d4d2d0;
+  	text-align: center;
+  }
