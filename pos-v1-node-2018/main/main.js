@@ -27,7 +27,6 @@ function getShoppingList(inputs, items) {
             })[0];
             if (isNaN(quantity)) {
                 temp.quantity = 1;
-
             } else {
                 temp.quantity = quantity;
             }
