@@ -12,4 +12,9 @@ describe('taxi fee', function () {
         let expect_fee = 15;
         expect(result).toEqual(expect_fee);
     });
+    it('return the taxi fee when the mileage is more than 8 kilometers ', function () {
+        let result = main(8.5, 35);
+        let expect_fee = 21;
+        expect(result).toEqual(expect_fee);
+    });
 });
