@@ -1,5 +1,6 @@
 const loadAllItems = require("./datbase").loadAllItems;
 const loadPromotions = require("./datbase").loadPromotions;
+
 module.exports = function printInventory(inputs) {
     let items = loadAllItems();
     let shoppingList = getShoppingList(inputs, items);
@@ -8,11 +9,9 @@ module.exports = function printInventory(inputs) {
     let result= buildResult(shoppingList,summary);
     console.log(result);
     return result;
-
 };
 
 function getShoppingList(inputs, items) {
-
     let shoppingList = [];
     for (let i = 0; i < inputs.length; i++) {
         let temp = inputs[i].split("-");
@@ -42,7 +41,6 @@ function getShoppingList(inputs, items) {
             }
         }
     }
-
     return shoppingList;
 }
 
@@ -53,16 +51,13 @@ function getSummary(shoppingList, promotions) {
     let promotionsInfo = "挥泪赠送商品：\n";
     for (let i = 0; i < shoppingList.length; i++) {
         let subtotal = 0;
+        total+=shoppingList[i].price * shoppingList[i].quantity;
         if (promotionsId.indexOf(shoppingList[i].barcode) == -1 || shoppingList[i].quantity <= 1) {
             subtotal = shoppingList[i].price * shoppingList[i].quantity;
-            total+=shoppingList[i].price * shoppingList[i].quantity;
         } else {
-            total+=shoppingList[i].price * shoppingList[i].quantity;
-            // promotionsInfo += "名称：" + shoppingList[i].name + "，数量：" + parseInt(shoppingList[i].quantity/2) + shoppingList[i].unit + "\n";
-            //按照题意优惠商品买二赠一，赠送数量应为优惠商品数量的一半。测试用例中雪碧的数量有5瓶，赠送数量为1。以测试用例为准。
-            promotionsInfo += "名称：" + shoppingList[i].name + "，数量：" + 1+ shoppingList[i].unit + "\n";
-            totalPromotions += shoppingList[i].price;
-            subtotal = shoppingList[i].price * (shoppingList[i].quantity - 1);
+            promotionsInfo += "名称：" + shoppingList[i].name + "，数量：" + parseInt(shoppingList[i].quantity/3) + shoppingList[i].unit + "\n";
+            totalPromotions += shoppingList[i].price*parseInt(shoppingList[i].quantity/3);
+            subtotal = shoppingList[i].price * (shoppingList[i].quantity - parseInt(shoppingList[i].quantity/3));
         }
         shoppingList[i].subtotal = subtotal;
     }
