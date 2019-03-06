@@ -6,3 +6,4 @@
 - [TaxiFee](https://github.com/Ruifeng-Wu/InTW/tree/master/taxi-fee-2018)  
 - [TackOutFood](https://github.com/Ruifeng-Wu/InTW/tree/master/take-out-food-2018)  
 - [PosNode](https://github.com/Ruifeng-Wu/InTW/tree/master/pos-v1-node-2018)  
+- [Git的使用](https://github.com/Ruifeng-Wu/InTW/tree/master/Git的使用.md)  
