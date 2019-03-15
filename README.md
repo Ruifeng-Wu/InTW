@@ -9,3 +9,4 @@
 - [Git的使用](https://github.com/Ruifeng-Wu/InTW/tree/master/Git的使用.md)  
 - [Linux常用命令](https://github.com/Ruifeng-Wu/InTW/blob/master/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.md)
 - [IDEA快捷键](https://github.com/Ruifeng-Wu/InTW/blob/master/IntelliJIDEA_ReferenceCard.pdf)
+- [怎样提问](https://github.com/Ruifeng-Wu/InTW/blob/master/%E5%85%B3%E4%BA%8E%E6%8F%90%E9%97%AE..md)
