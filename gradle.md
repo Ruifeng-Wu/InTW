@@ -6,8 +6,6 @@
 
 Gradle是一种构建工具，帮助我们构建包括变异、打包等过程。
 
-
-
 ##### 二、Gradle的结构
 
 1. **Project与Task**——在Gradle中，每一个待构建的工程是一个Project，构建一个Project需要执行一系列Task，比如编译、打包这些构建过程的子过程都对应着一个Task。
@@ -59,4 +57,6 @@ apply plugin: 'java'
 - dependencies：配置依赖的classpath
 
 - allprojects：配置多项目共同的依赖
+
+目前，只用到这些知识点，如果以后需要高度定制的构建流程还需要掌握更多的知识，例如groovy语法。
 
